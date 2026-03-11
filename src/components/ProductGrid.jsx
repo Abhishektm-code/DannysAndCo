@@ -14,18 +14,18 @@ export default function ProductGrid() {
   const searchParams = new URLSearchParams(location.search);
   const searchQuery = searchParams.get("q") || "";
 
-  useEffect(() => {
-    fetch("/api/products")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error fetching products:", err);
-        setLoading(false);
-      });
-  }, []);
+useEffect(() => {
+  fetch("https://dannysandco.onrender.com")
+    .then((res) => res.json())
+    .then((data) => {
+      setProducts(data);
+      setLoading(false);
+    })
+    .catch((err) => {
+      console.error("Error fetching products:", err);
+      setLoading(false);
+    });
+}, []);
 
   const categories = ["All", ...new Set(products.map((p) => p.category))];
   
