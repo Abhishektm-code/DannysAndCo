@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-stone-900 bg-stone-50;
+}
+
+/* Hide default cursor on desktop when custom cursor is active */
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+  
+  a, button, [role="button"], input, select, textarea {
+    cursor: none;
+  }
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.nav-link-underline {
+  @apply relative;
+}
+
+.nav-link-underline::after {
+  content: '';
+  @apply absolute -bottom-1 left-0 w-full h-0.5 bg-stone-900 scale-x-0 transition-transform duration-300 origin-left;
+}
+
+.nav-link-underline:hover::after {
+  @apply scale-x-100;
+}
