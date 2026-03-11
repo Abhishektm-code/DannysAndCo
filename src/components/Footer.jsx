@@ -18,6 +18,7 @@ export default function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/dannys_and_co_india/" className="text-sm text-stone-600 hover:text-stone-900 transition-colors" target="_blank">Instagram</a>
+              <a href="https://chat.whatsapp.com/IKStuEaLjdXFFBdCAMUXCQ?mode=gi_t" className="text-sm text-stone-600 hover:text-stone-900 transition-colors" target="_blank">Whatsapp</a>
             </div>
           </div>
         </div>
