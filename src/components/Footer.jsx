@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">Contact Us</h4>
-            <p className="text-sm text-stone-600">Phone: ++91 76765 28949</p>
+            <p className="text-sm text-stone-600">Phone: +91 76765 28949</p>
             <p className="text-sm text-stone-600">Email: growworldwide01@gmail.com </p>
           </div>
           <div>
