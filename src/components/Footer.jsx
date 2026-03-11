@@ -21,6 +21,9 @@ export default function Footer() {
               <a href="https://chat.whatsapp.com/IKStuEaLjdXFFBdCAMUXCQ?mode=gi_t" className="text-sm text-stone-600 hover:text-stone-900 transition-colors" target="_blank">Whatsapp</a>
             </div>
           </div>
+          <div>
+              <a href="https://www.instagram.com/_the_vibrant_one_14/" className="text-sm text-stone-600 hover:text-stone-900 transition-colors" target="_blank">Developer</a>
+          </div>
         </div>
         <div className="mt-12 pt-8 border-t border-stone-100 text-center">
           <p className="text-xs text-stone-400">
